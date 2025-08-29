@@ -15,9 +15,15 @@
 
 Для запуска проекта нужно выполнить следующие команды:
 
-`git clone repo-url`
+`git clone https://github.com/karimvafin/mlops_tasks`
 
-`cd repo`
+`cd mlops_tasks`
+
+(optional) `python -m venv .venv && source .venv/bin/activate`
+
+`pip install -r requirements.txt`
+
+`dvc remote add -d storage remote_dir`
 
 `dvc pull`
 
