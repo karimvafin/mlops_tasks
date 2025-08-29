@@ -1,0 +1,5 @@
+mlflow
+pandas
+apache-airflow==2.11.0
+dvc
+scikit-learn

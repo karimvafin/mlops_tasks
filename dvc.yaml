@@ -1,0 +1,18 @@
+stages:
+  data_load:
+    cmd: python data_loader.py
+    deps:
+      - data_loader.py
+    outs:
+      - train.csv
+      - test.csv
+
+  train:
+    cmd: python train_model.py
+    deps:
+      - train_model.py
+      - train.csv
+      - test.csv
+
+  clean_up:
+    cmd: rm train.csv && rm test.csv

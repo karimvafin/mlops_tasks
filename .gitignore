@@ -1,0 +1,10 @@
+/heart.csv
+/test.csv
+/train.csv
+/.venv
+/.dvc
+/models
+/.idea
+/__pycache__
+/mlruns
+
