@@ -13,6 +13,3 @@ stages:
       - train_model.py
       - train.csv
       - test.csv
-
-  clean_up:
-    cmd: rm train.csv && rm test.csv
