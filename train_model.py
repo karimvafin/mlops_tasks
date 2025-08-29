@@ -21,8 +21,8 @@ def main():
 
     mlflow.set_experiment('heart_diseases')
 
-    rf_params = {"n_estimators": 100, "max_depth": 1000}
-    gb_params = {"n_estimators": 100, "max_depth": 10}
+    rf_params = {"n_estimators": 100, "max_depth": 1000, "random_state": 42}
+    gb_params = {"n_estimators": 100, "max_depth": 10, "random_state": 42}
     log_reg_params = {"max_iter": 1000}
     rf = RandomForestClassifier(**rf_params)
     gb = GradientBoostingClassifier(**gb_params)
